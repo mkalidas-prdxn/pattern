@@ -123,6 +123,19 @@ function pattern5() {
 }
 
 
+function pattern6() {
+  document.write("Pattern 6 is : ");
+  document.write('<br><br><br>')
+  for (i = 1; i <= n; i++) {
+    for (j = 1; j <= i; j++) {
+      document.write("# &nbsp");
+    }
+    document.write("<br>");
+  }
+}
+
+
+
 
 
 
