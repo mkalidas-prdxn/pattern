@@ -134,6 +134,38 @@ function pattern6() {
   }
 }
 
+function pattern7() {
+  document.write("Pattern 7 is : ");
+  document.write('<br><br><br>')
+  var flag = 2;
+  var a;
+  for (i = 1; i <= n; i++) {
+    for (j = n - i - 1; j >= 0; j--) {
+      document.write('&nbsp &nbsp &nbsp');
+    }
+    a = i;
+    for (k = 0; k < i; k++) {
+      document.write(a + "&nbsp &nbsp");
+      a++;
+    }
+    a--;
+    for (k = 1; k < i; k++) {
+      a--;
+      document.write(a + "&nbsp &nbsp");
+      // a++;
+    }
+    document.write("<br>");
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
