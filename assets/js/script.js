@@ -56,6 +56,37 @@ function pattern3() {
   }
 }
 
+function pattern4() {
+  document.write("Pattern 4 is : ");
+  document.write('<br><br><br>')
+  var a = n / 2;
+  var flag = 0;
+  if (n % 2 == 1) { flag = 1; }
+  for (i = a; i > flag; i--) {
+    for (j = i; j > 0; j--) {
+      document.write("* &nbsp");
+    }
+    for (k = 0; k < a - i; k++) {
+      document.write("&nbsp &nbsp &nbsp &nbsp &nbsp");
+    }
+    for (j = i; j > 0; j--) {
+      document.write("&nbsp * ");
+    }
+    document.write("<br>");
+  }
+  for (i = 0; i < n - a; i++) {
+    for (j = 0; j <= i; j++) {
+      document.write("* &nbsp");
+    }
+    for (k = 0; k < n - a - 1 - i; k++) {
+      document.write("&nbsp &nbsp &nbsp &nbsp &nbsp");
+    }
+    for (j = 0; j <= i; j++) {
+      document.write("&nbsp * ");
+    } document.write("<br>");
+  }
+}
+
 
 
 
