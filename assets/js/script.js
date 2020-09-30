@@ -34,7 +34,6 @@ function pattern2() {
     for (l = 0; l < i - 1; l++) {
       document.write('&nbsp &nbsp');
     }
-    //  document.write(' B');
     for (m = 0; m < i; m++) {
       document.write('&nbsp *');
       break;
@@ -45,6 +44,18 @@ function pattern2() {
     document.write(' *')
   }
 }
+
+function pattern3() {
+  document.write("Pattern 3 is : ");
+  document.write('<br><br><br>')
+  for (i = 1; i <= n; i++) {
+    for (j = 1; j <= i; j++) {
+      document.write(Math.pow(j, i) + "&nbsp &nbsp");
+    }
+    document.write("<br>");
+  }
+}
+
 
 
 
