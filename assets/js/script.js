@@ -21,6 +21,32 @@ function pattern1() {
   }
 }
 
+function pattern2() {
+  document.write("Pattern 2 is : ");
+  document.write('<br><br><br>')
+  for (i = 0; i < n - 1; i++) {
+    for (j = n - i - 1; j > 0; j--) {
+      document.write('&nbsp &nbsp');
+    } document.write('&nbsp *');
+    for (k = 0; k < i; k++) {
+      document.write('&nbsp &nbsp');
+    }
+    for (l = 0; l < i - 1; l++) {
+      document.write('&nbsp &nbsp');
+    }
+    //  document.write(' B');
+    for (m = 0; m < i; m++) {
+      document.write('&nbsp *');
+      break;
+    } document.write("<br>");
+  }
+  document.write('&nbsp')
+  for (i = 0; i < (n * 2) - 1; i++) {
+    document.write(' *')
+  }
+}
+
+
 
 
 
